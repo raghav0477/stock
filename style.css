@@ -32,16 +32,20 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 54%;
+  width: 50%;
+  height: 35rem;
   margin: 0 auto;
   padding: 2rem;
+  /* border: 1px solid rgb(24, 23, 23); */
   border-radius: 8px;
+  box-shadow: rgba(9, 9, 10, 0.1) 0px 4px 12px;
+  /* filter: drop-shadow(0 0 0.75rem crimson); */
 }
 input {
   padding: 15px;
   margin-right: 1rem;
   border-radius: 5px;
-  width: 50rem;
+  width: 100%;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -60,7 +64,12 @@ label {
   font-weight: 700;
   text-decoration: underline dotted;
 }
-
+#nono{
+  /* margin-top: 10rem; */
+  display: flex;
+  flex-direction: column;
+  /* color: red; */
+}
 @media only screen and (max-width: 576px) {
     .container{
         width: 500px;
