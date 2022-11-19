@@ -1,8 +1,4 @@
-:root {
-  --white: #fafafa;
-  --gray: #696969;
-  --black: #141414;
-}
+
 * {
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
@@ -12,8 +8,7 @@
 }
 
 button {
-  /* padding: 5px 15px; */
-  /* margin-top: 2rem; */
+
   background-color: rgb(233, 231, 227);
   border-radius: 15px;  
   width: 35rem;

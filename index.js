@@ -22,9 +22,8 @@ form.addEventListener("submit", (e) => {
       `https://latest-stock-price.p.rapidapi.com/price?Indices=NIFTY%2050`,
       options
     );
-    // console.log(inputName.value)
+
     let response = await res.json();
-    // console.log(response)
 
     for(let i = 0;i<=51;i++){
       let stock = response[i].symbol;
@@ -47,20 +46,7 @@ form.addEventListener("submit", (e) => {
 
     console.log("first");
 
-    // inputName.addEventListener("keyup", (event) => {
-    //   let value = inputName.value;
-    //   if (array.includes(value)) {
-    //     alert("it is in the array");
-    //   }
-    // });
-    // console.log(lp)
-    // console.log(pv)
-    // console.log('this is siffere',(lp-pv)/lp*100)
-    // if((lp-pv)>lp){
-
-    //   console.log(`The${lp}`);
-    // }
   };
   stock();
-  // shortenUrl(url);
+
 });
