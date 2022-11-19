@@ -1,2 +1,2 @@
-# Web App to calculate the profit about the stock
+# Web App to calculate the profit of different stock
 ## 
