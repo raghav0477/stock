@@ -4,12 +4,12 @@
   margin: 0;
 }
 body {
-  background-color: #8ae1e5;
-  font-family: 'Roboto', sans-serif;
+  background-color: #bbdbdb;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  width: 1440px;
+  width: 1400px;
   margin: 0 auto;
 }
 .hero {
@@ -33,26 +33,28 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  color: #00153c;
+  width: 40%;
+  height: 35rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 10px;
-  background: linear-gradient(145deg, #70d7dc, #5fb5b9);
-  box-shadow: 12px 12px 24px #59abaf, -12px -12px 24px #79e7ed;
+  background: linear-gradient(145deg, #6cd0d4, #5bafb2);
+  box-shadow: 15px 15px 60px #c9dcdd, -15px -15px 60px #74dfe4;
 }
 button {
   width: 20rem;
   margin: 3rem auto;
   padding: 1.5rem;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background: linear-gradient(145deg, #70d7dc, #5fb5b9);
-  box-shadow: 12px 12px 24px #3f797c, -12px -12px 24px #93ffff;
+  background: linear-gradient(145deg, #5aced4, #6bbec3);
+  box-shadow: 12px 12px 20px #59a3a7, -12px -12px 20px #85fefe;
   transition: transform 0.4s ease;
 }
-button:hover{
+button:hover {
   transform: translateY(-0.33rem);
 }
 input {
@@ -64,7 +66,7 @@ input {
   font-weight: 500;
   text-transform: uppercase;
 }
-::placeholder { 
+::placeholder {
   text-transform: none;
 }
 label {
@@ -87,10 +89,10 @@ ul {
   margin-top: 3rem;
   font-size: 20px;
   list-style: circle;
-  columns: 4;
-  gap: 2rem;
-  -webkit-columns: 4;
-  -moz-columns: 4;
+  columns: 3;
+  gap: 8rem;
+  -webkit-columns: 3;
+  -moz-columns: 3;
 }
 @media only screen and (max-width: 576px) {
   .container {
@@ -113,6 +115,7 @@ ul {
     flex-wrap: wrap;
     align-content: center;
     width: 80%;
+    height: 26rem;
     margin-top: 1rem;
   }
   input {
@@ -121,6 +124,7 @@ ul {
   ul {
     columns: 3;
     font-size: 18px;
+    gap: 2rem;
   }
   button {
     width: 140px;
