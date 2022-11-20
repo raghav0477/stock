@@ -14,17 +14,12 @@
     <div class="hero container">
       <div class="hero-title">Stock Profit or Loss</div>
      <main>
-      <div class="list">
-        <div class="list-title">
-          List of Companies
-        </div>
-        <ul id="nono">
-          <!-- <button id="generate">Generate</button> -->
-        </ul>
-      </div>
       <form action="">
         <label for="">Name of the Stock</label>
-        <input type="text" name="name" id="stock_name" placeholder="Enter the name of company listed"/>
+        <!-- <input type="text" name="name" id="stock_name" placeholder="Enter the name of company listed"/> -->
+        <select name="name" id="stock_name" placeholder="Enter the name of company listed">
+          <option value="" id="option" disabled selected hidden>Select the name of company listed</option>
+        </select>
 
         <label for="">Price at the time of buying</label>
         <input type="number" name="price" id="price" placeholder="Enter the initial price of stock" />
@@ -32,9 +27,9 @@
           Calculate!
         </button>
       </form>
+      <div id="result">
+      </div>
     </main>
-    <div id="zero">
-    </div>
      
     </div>
     <script src="./index.js"></script>

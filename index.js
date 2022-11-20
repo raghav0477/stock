@@ -8,9 +8,10 @@ const options = {
 const form = document.querySelector("form");
 const inputName = document.getElementById("stock_name");
 const inputPrice = document.getElementById("price");
-const hero_section = document.getElementById("zero");
+const hero_section = document.getElementById("result");
 const list_section = document.querySelector("#nono");
 const list_btn = document.querySelector("#generate");
+
 
 function showDiv() {
   document.getElementById('nono').style.display = "block";
@@ -24,7 +25,8 @@ var stock = async function () {
   console.log(response)
   for(let i = 0;i<=51;i++){
     let stock_nm = response[i].symbol;
-    list_section.innerHTML += `<li>${stock_nm}</li>`;
+    // list_section.innerHTML += `<li>${stock_nm}</li>`;
+    inputName.innerHTML += `<option>${stock_nm}</option>`;
   }
   return response;
 };
@@ -64,3 +66,22 @@ const sam = async function() {
   };
   sam();
 });
+
+
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }

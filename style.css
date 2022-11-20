@@ -16,13 +16,10 @@ body {
   margin-top: 2rem;
 }
 main {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-}
-.list-title {
-  font-size: 25px;
-  font-weight: 700;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   font-size: 40px;
@@ -39,24 +36,26 @@ form {
   margin: 0 auto;
   padding: 4rem;
   border-radius: 10px;
-  background: linear-gradient(145deg, #6cd0d4, #5bafb2);
-  box-shadow: 15px 15px 60px #c9dcdd, -15px -15px 60px #74dfe4;
+  background: linear-gradient(14deg, #6cd0d4, #5bafb2);
+  /* box-shadow: 15px 15px 60px #c9dcdd; */
 }
+
 button {
   width: 20rem;
-  margin: 3rem auto;
+  font-size: 16px;
+  margin: 3rem 1rem;
   padding: 1.5rem;
-  font-size: 20px;
+  color: rgb(254, 246, 215);
+  background: linear-gradient(117deg, #20b085, #20b085);
   border: none;
   border-radius: 10px;
-  cursor: pointer;
-  background: linear-gradient(145deg, #5aced4, #6bbec3);
-  box-shadow: 12px 12px 20px #59a3a7, -12px -12px 20px #85fefe;
-  transition: transform 0.4s ease;
+  transition: box-shadow 0.5s ease 0s;
 }
 button:hover {
-  transform: translateY(-0.33rem);
+  background:rgb(7, 137, 77);
+  box-shadow: 0 0.1rem 0.8rem #20b085;
 }
+
 input {
   padding: 15px;
   margin-right: 1rem;
@@ -64,8 +63,18 @@ input {
   width: 85%;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
+  background-color: #c9dcdd;
 }
+#stock_name{
+  padding: 15px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  width: 85%;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #c9dcdd;
+}
+
 ::placeholder {
   text-transform: none;
 }
@@ -74,26 +83,19 @@ label {
   padding: 1rem 0;
 }
 
-#zero {
+#result {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 25px;
   gap: 5px;
+  margin-top: 2rem;
 }
-#zero span {
+#result span {
   font-weight: 700;
   text-decoration: underline dotted;
 }
 
-ul {
-  margin-top: 3rem;
-  font-size: 20px;
-  list-style: circle;
-  columns: 3;
-  gap: 8rem;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
+
 @media only screen and (max-width: 576px) {
   .container {
     width: 500px;
@@ -103,12 +105,6 @@ ul {
     flex-direction: column;
     margin: 0 auto;
   }
-  .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
   form {
     padding: 0;
     display: flex;
@@ -116,20 +112,15 @@ ul {
     align-content: center;
     width: 80%;
     height: 26rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   input {
     width: 80%;
   }
-  ul {
-    columns: 3;
-    font-size: 18px;
-    gap: 2rem;
-  }
   button {
     width: 140px;
   }
-  #zero {
+  #result {
     align-items: center;
     margin-top: 2rem;
   }
@@ -139,8 +130,7 @@ ul {
     width: 1200px;
   }
   form {
-    padding: 0;
-    width: 65%;
+    width: 50%;
     align-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -148,27 +138,17 @@ ul {
   main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-  }
-  .list {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
-  ul {
-    gap: 3rem;
-    font-size: 25px;
-  }
   input {
-    width: 70%;
-    margin: 0 auto;
+    width: 85%;
   }
   button {
     width: 20rem;
     font-size: 25px;
     margin: 2rem auto;
   }
-  #zero {
+  #result {
     margin-top: 2rem;
     font-size: 25px;
   }
