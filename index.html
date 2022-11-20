@@ -4,35 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Stock</title>
   </head>
   <body>
     <div class="hero container">
-      <div class="hero-title">Stock Calculation</div>
+      <div class="hero-title">Stock Profit or Loss</div>
      <main>
       <div class="list">
         <div class="list-title">
           List of Companies
         </div>
-        <!-- <button name="answer" value="Show Div" onclick="showDiv()">Show Companies</button> -->
         <ul id="nono">
           <!-- <button id="generate">Generate</button> -->
         </ul>
       </div>
       <form action="">
         <label for="">Name of the Stock</label>
-        <input type="text" name="name" id="stock_name" />
+        <input type="text" name="name" id="stock_name" placeholder="Enter the name of company listed"/>
 
         <label for="">Price at the time of buying</label>
-        <input type="number" name="price" id="price" />
-        <button type="submit" class="newUrl-btn" id="btn" id="myButton">
+        <input type="number" name="price" id="price" placeholder="Enter the initial price of stock" />
+        <button type="submit" class="btn" id="myButton">
           Calculate!
         </button>
       </form>

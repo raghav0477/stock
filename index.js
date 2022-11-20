@@ -51,12 +51,15 @@ const sam = async function() {
       console.log(pro_percent);
       console.log("this is sub",profit)
       const html = `
+      <p>Company Name <span>${stock}</span></p>
       <p>Today's Stock price is <span>${response2[i].lastPrice}</span></p>
       <p>Difference in the prices <span>${(profit).toFixed(2)}</span></p>
       <p>The profit percentage is <span>${pro_percent.toFixed(2)}%</span></p>`;
 
       hero_section.insertAdjacentHTML('beforeend', html);
       console.log(inputPrice.value);
+      inputName.value='';
+      inputPrice.value='';
     }}
   };
   sam();
