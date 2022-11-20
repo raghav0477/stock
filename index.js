@@ -12,6 +12,9 @@ const hero_section = document.getElementById("zero");
 const list_section = document.querySelector("#nono");
 const list_btn = document.querySelector("#generate");
 
+function showDiv() {
+  document.getElementById('nono').style.display = "block";
+}
 var stock = async function () {
   let res = await fetch(
     `https://latest-stock-price.p.rapidapi.com/price?Indices=NIFTY%2050`,
@@ -58,6 +61,7 @@ const sam = async function() {
   };
   sam();
 });
+
 
 
 //   const stock = async function () {
